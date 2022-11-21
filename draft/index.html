@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>Draft</title>
 </head>
 <body>
 
     <header>
-        <div>
+        <div id="logo">
             <h1 id="titulo">DRAFT</h1>
         </div>
     </header>
@@ -18,26 +24,26 @@
     <main>
 
     <div id="container-esquerda">
-        <p>SORTEADOR DE <b>NOME</b></p>
-        <p>Realize sorteios de forma 100% gratuita e online.</p>
+        <h2>SORTEADOR <br> DE <br><b>NOMES</b></h2>
+        <h3>Realize sorteios de forma 100% gratuita e online.</h3>
     </div>
     <div id="container-meio">
   
         <form action="">
 
-            <p>LISTA DE NOMESs</p>
+            <p>LISTA DE NOMES</p>
 
-            <input type="text" name="nomes" placeholder="Utilize ponto e vírgula (;) para separar cada nome...">
+            <textarea wrap="hard" id="nomes" placeholder="Utilize ponto e vírgula (;) para separar cada nome..."></textarea>
 
 
         <p>QUANTIDADE A SORTEAR</p>
 
-        <input type="number" name="qtd">
+        <input type="number" name="qtd" id="qtd">
 
-        <input type="submit" placeholder="SORTEAR"> 
+        <input type="submit" placeholder="SORTEAR" class="submit"> 
         <img src="img/contorno-do-cubo-de-dados 2.svg" alt="DADO">
 
-        <input type="submit" placeholder="ORDENAR">
+        <input type="submit" placeholder="ORDENAR" class="submit">
         <img src="img/ordenar 2.svg" alt="SETAS">
 
         </form>
